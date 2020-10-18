@@ -257,6 +257,7 @@ def YOLO():
     # new_height, new_width = frame_height //2, frame_width//2
     new_height, new_width = frame_height, frame_width
     '''
+    test
     out = cv2.VideoWriter(
         "./test5_output.avi", cv2.VideoWriter_fourcc(*"MJPG"), 10.0,
         (new_width, new_height))
