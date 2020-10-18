@@ -181,7 +181,7 @@ def cvDrawBoxes(detections, img, time_start_between, time_width_element, time_sp
                         ind_del=i
                 if ind_del<999:
                     del rectangleblock[ind_del]
-                    a=2
+                   
  
         #drawing rectangles over all detections
         if rectangleblock:
@@ -249,7 +249,7 @@ def YOLO():
     from tkinter import filedialog
     root = tk.Tk()
     root.withdraw()
-    cap = cv2.VideoCapture("./test_videos/testg9.mp4")
+    cap = cv2.VideoCapture("./test_videos/testg10.mp4")
     #cap = cv2.VideoCapture(filedialog.askopenfilename())
 
     frame_width = int(cap.get(3))
