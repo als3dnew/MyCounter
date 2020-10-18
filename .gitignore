@@ -1,3 +1,6 @@
+__pycache__
+test_videos
+default_weights
 *.o
 *.a
 *.dSYM
