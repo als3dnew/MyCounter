@@ -206,9 +206,10 @@ altNames = None
 
 def YOLO():
     global metaMain, netMain, altNames
-    configPath = "./backup/GLASS_ACURACY/yolo-obj.cfg"
-    weightPath = "./backup/GLASS_ACURACY/yolo-obj_last_13102020.weights"
-    metaPath = "./backup/GLASS/obj.data"
+    configMasterFolder="./datas/13102020_accuracy_border_test/"
+    configPath = configMasterFolder + "yolo-obj_detect.cfg"
+    weightPath = configMasterFolder + "yolo-obj_last.weights"
+    metaPath = configMasterFolder + "obj.data"
     if not os.path.exists(configPath):
         raise ValueError("Invalid config path `" +
                          os.path.abspath(configPath) + "`")
@@ -248,18 +249,18 @@ def YOLO():
     from tkinter import filedialog
     root = tk.Tk()
     root.withdraw()
-    cap = cv2.VideoCapture("./testg9.mp4")
+    cap = cv2.VideoCapture("./test_videos/testg9.mp4")
     #cap = cv2.VideoCapture(filedialog.askopenfilename())
 
     frame_width = int(cap.get(3))
     frame_height = int(cap.get(4))
     # new_height, new_width = frame_height //2, frame_width//2
     new_height, new_width = frame_height, frame_width
-
+    '''
     out = cv2.VideoWriter(
         "./test5_output.avi", cv2.VideoWriter_fourcc(*"MJPG"), 10.0,
         (new_width, new_height))
-
+    '''
     darknet_image = darknet.make_image(new_width, new_height, 3)
 
     time_start_between=0
@@ -296,7 +297,7 @@ def YOLO():
         #out.write(image)
 
         i += 1
-    out.release()
+    #out.release() запись в результата в выходной файл
     cv2.destroyAllWindows()
 
 
