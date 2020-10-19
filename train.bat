@@ -1,1 +1,2 @@
-darknet.exe detector train datas/18102020_ACC_BRD_DS2/obj.data datas/18102020_ACC_BRD_DS2/yolov-train.cfg default_weights/yolov4.conv.137 -map
+rem darknet.exe detector train datas/18102020_ACC_BRD_DS2/obj.data datas/18102020_ACC_BRD_DS2/yolov-train.cfg default_weights/yolov4.conv.137 -map
+darknet.exe detector train datas/19102020_ACC_BRD_DS3/obj.data datas/19102020_ACC_BRD_DS3/yolov-train.cfg default_weights/yolov4.conv.137 -map

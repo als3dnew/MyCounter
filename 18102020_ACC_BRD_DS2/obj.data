@@ -1,0 +1,5 @@
+classes= 1
+train  = datas/18102020_ACC_BRD_DS2/train.txt
+valid  = datas/18102020_ACC_BRD_DS2/test.txt
+names = datas/18102020_ACC_BRD_DS2/obj.names
+backup = datas/18102020_ACC_BRD_DS2/backup
