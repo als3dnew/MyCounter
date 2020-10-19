@@ -1,0 +1,4 @@
+rem darknet.exe detector demo datas/18102020_ACC_BRD_DS2/obj.data datas/18102020_ACC_BRD_DS2/yolov-detect.cfg datas/18102020_ACC_BRD_DS2/backup/yolov-train_last.weights http://10.154.253.198:8081/
+rem darknet.exe detector demo datas/18102020_ACC_BRD_DS2/obj.data datas/18102020_ACC_BRD_DS2/yolov-detect.cfg datas/18102020_ACC_BRD_DS2/backup/yolov-train_last.weights test_videos/testg9.mp4
+darknet.exe detector demo datas/18102020_ACC_BRD_DS2/obj.data datas/18102020_ACC_BRD_DS2/yolov-detect.cfg datas/18102020_ACC_BRD_DS2/backup/yolov-train_last.weights rtsp://admin:HAcam@10.17.119.86:5000/live1.sdp
+rem darknet.exe detector demo datas/18102020_ACC_BRD_DS2/obj.data datas/18102020_ACC_BRD_DS2/yolov-detect.cfg datas/18102020_ACC_BRD_DS2/backup/yolov-train_last.weights rtsp://admin:HAcam@10.17.119.90:5000/live1.sdp
